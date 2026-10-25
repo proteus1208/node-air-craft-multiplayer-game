@@ -1,0 +1,14 @@
+{
+  "name": "air-clash",
+  "private": true,
+  "workspaces": ["shared", "server", "client"],
+  "scripts": {
+    "sprites": "node scripts/generate-sprites.mjs",
+    "dev": "npm run sprites && concurrently -n server,client -c blue,green \"npm run dev -w @airclash/server\" \"npm run dev -w @airclash/client\"",
+    "start": "npm run sprites && npm run build -w @airclash/client && npm run start -w @airclash/server",
+    "test": "npm run test -w @airclash/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

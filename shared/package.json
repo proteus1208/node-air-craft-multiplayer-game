@@ -1,0 +1,17 @@
+{
+  "name": "@airclash/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./constants.js": "./constants.js",
+    "./level.js": "./level.js",
+    "./geom.js": "./geom.js",
+    "./area.js": "./area.js",
+    "./protocol.js": "./protocol.js",
+    "./formulas.js": "./formulas.js",
+    "./combat.js": "./combat.js",
+    "./world.js": "./world.js",
+    "./abilities.js": "./abilities.js"
+  }
+}
